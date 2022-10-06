@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+ <div class="container">
+  <div class="gameContainer">
+    <div class="gameHeader">
+      <div class="left questions">
+        <div class="container"><span></span></div>
+      </div>
+      <div class="left timer">
+        <div class="container">TIME: <span></span>
+</div>
+      </div>
+        <div class="left score">
+          <div class="container">SCORE: <span></span>
+</div>
+        </div>
+    </div>
+        <div id="gameChoices">
+          <div class="row">
+            <div class="left half">
+              <div class="container"><button id="buttonOne" data-index="0"></button></div>
+            </div>
+            <div class="left half">
+              <div class="container"><button id="buttonTwo" data-index="1"></button></div>
+            </div>
+            <div class="row">
+              <div class="left half">
+                <div class="container"><button id="buttonThree" data-index="2"></button></div>
+              </div>
+              <div class="left half">
+                <div class="container"><button id="buttonFour" data-index="3"></button></div>
+              </div>
+            </div>
+            </div>
+            <h1 id="title">Spill The Trivia</h1>
+          </div>
+        </div>
+        <button class="startButton">Start</button>
+        </div>
+  </div>
+  <div class="modal_window">
+    <div class="modal_message">
+      <p></p>
+  </div>
+
+
+ </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(0)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html> 
