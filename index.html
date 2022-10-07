@@ -5,59 +5,89 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- <body onload="nextQuestion(0)"> -->
+    <main>
+      <p class="placeHolderText" id="placeHolderText">Spill The Trivia!</p>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
 
-<div class="stage">
- <div class="container">
-  <div class="gameContainer">
-    <div class="gameHeader">
-      <div class="left questions">
-        <div class="container"><span></span></div>
-      </div>
-      <div class="left timer">
-        <div class="container">TIME: <span></span>
-</div>
-      </div>
-        <div class="left score">
-          <div class="container">SCORE: <span></span>
-</div>
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Game Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
         </div>
-    </div>
-        <div id="gameChoices">
-          <div class="row">
-            <div class="left half">
-              <div class="container"><button id="buttonOne" data-index="0"></button></div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
             </div>
-            <div class="left half">
-              <div class="container"><button id="buttonTwo" data-index="1"></button></div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
             </div>
-            <div class="row">
-              <div class="left half">
-                <div class="container"><button id="buttonThree" data-index="2"></button></div>
-              </div>
-              <div class="left half">
-                <div class="container"><button id="buttonFour" data-index="3"></button></div>
-              </div>
+
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
             </div>
+
+            <div class="next-button-container">
+                <button onclick="getNextQuestion()">Next Question</button>
             </div>
-            <h1 id="title">Spill The Trivia</h1>
-          </div>
+
         </div>
-        <button class="startButton">Start</button>
-        </div>
-  </div>
-  <div class="modal_window">
-    <div class="modal_message">
-      <p></p>
-  </div>
-
-
- </div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-
-<script src="./script.js"></script>
-
+    </main>
+    <script src="script.js"></script>
 </body>
-</html> 
