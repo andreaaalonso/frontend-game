@@ -7,7 +7,7 @@
 <body>
   <!-- <body onload="nextQuestion(0)"> -->
     <main>
-      <p class="placeHolderText" id="placeHolderText">Spill The Trivia!</p>
+      <p class="placeHolderText" id="placeHolderText"> Toon Trivia!</p>
         <!-- creating a modal for when quiz ends -->
         <div class="modal-container" id="score-modal">
 
@@ -47,8 +47,6 @@
                <div class="modal-container" id="option-modal">
 
                     <div class="modal-content-container">
-                         <h1>Please Pick An Option</h1>
-
                          <div class="modal-button-container">
                             <button onclick="closeOptionModal()">Continue</button>
                         </div>
@@ -58,33 +56,29 @@
                </div>
 
                 <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
-                    <label for="option-one" class="option" id="option-one-label"></label>
+                    <input type="radio" id="option-one" name="option" onclick="checkCorrectAnswer()" class="radio" value="optionA" />
+                    <label for="option-one" class="correct_option" id="option-one-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <input type="radio" id="option-two" name="option" onclick="checkIncorrectAnswer()" class="radio" value="optionB" />
                     <label for="option-two" class="option" id="option-two-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <input type="radio" id="option-three" name="option" onclick="checkIncorrectAnswer()" class="radio" value="optionC" />
                     <label for="option-three" class="option" id="option-three-label"></label>
                 </span>
 
 
                 <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <input type="radio" id="option-four" name="option" onclick="checkIncorrectAnswer()" class="radio" value="optionD" />
                     <label for="option-four" class="option" id="option-four-label"></label>
                 </span>
 
 
-            </div>
-
-            <div class="next-button-container">
-                <button onclick="getNextQuestion()">Next Question</button>
             </div>
 
         </div>
