@@ -17,7 +17,7 @@ Andrea Alonso
 
 
 ## How to use
-You can guess the correct answer to each question by clicking on a answer. The correct answer will be highlighted green if clicked on and the incorrect answer will be highlighted red if clicked on. Your score will be updated automatically and a number of correct and incorrect answers will be posted at the end of the game. 
+You can guess the correct answer to each question by clicking on one of the four options. The correct answer will be highlighted green if clicked on and the incorrect answer will be highlighted red if clicked on. Your score will be updated automatically and a number of correct and incorrect answers will be posted at the end of the game. 
 
 ## License
 This project is licensed under the GNU General Public License v3.0. 
