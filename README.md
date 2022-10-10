@@ -1,4 +1,4 @@
-# Toon Trivia: Frontend Game 
+# Toon Trivia 
 
 ## Description
 
