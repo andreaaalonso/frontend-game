@@ -102,12 +102,3 @@ function getCurrentQuestion(questionIndex, currentScore) {
   document.getElementById("question-number").innerHTML = questionIndex + 1;
   document.getElementById("player-score").innerHTML = currentScore;
 }
-
-function checkCorrectAnswer() {
-  numCorrectAnswer += 1;
-  setTimeout(() => { getNextQuestion(); }, 500);
-}
-
-function checkIncorrectAnswer() {
-  setTimeout(() => { getNextQuestion(); }, 500);
-}
