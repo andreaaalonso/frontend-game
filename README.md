@@ -6,6 +6,7 @@ Toon Trivia is a online trviva game in which the player guesses the answers of 1
 
 
 ## Prerequisites 
+HTML, CSS, and JavaScript
 Install Visual Studio Code from https://code.visualstudio.com/download and download Live Server v5.7.9 or the latest version of Live Server from the Extensions Tab.
 
 ## Getting Started
