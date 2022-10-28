@@ -2,7 +2,7 @@
 
 ## Description
 
-Toon Trivia is a online trviva game in which the player guesses the answers of 10 questions based on popular cartoon or animation shows or movies. The game obtains the random trivia questions by doing a GET call to https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple
+Toon Trivia is a online triva game in which the player guesses the answers of 10 questions based on popular cartoon or animation shows or movies. The game obtains the random trivia questions by doing a GET call to https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple
 
 
 ## Prerequisites 
